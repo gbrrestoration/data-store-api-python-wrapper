@@ -1,0 +1,43 @@
+# flake8: noqa
+
+# import all models into this package
+# if you have many models here with many references from one model to another this may
+# raise a RecursionError
+# to avoid this, import only the models that you directly need like:
+# from from rrap_mds_is_data_api.model.pet import Pet
+# or import this package, but before doing it, use:
+# import sys
+# sys.setrecursionlimit(n)
+
+from rrap_mds_is_data_api.model.collection_format import CollectionFormat
+from rrap_mds_is_data_api.model.collection_format_author import CollectionFormatAuthor
+from rrap_mds_is_data_api.model.collection_format_conversion import CollectionFormatConversion
+from rrap_mds_is_data_api.model.collection_format_dataset_info import CollectionFormatDatasetInfo
+from rrap_mds_is_data_api.model.collection_format_organisation import CollectionFormatOrganisation
+from rrap_mds_is_data_api.model.credential_response import CredentialResponse
+from rrap_mds_is_data_api.model.credentials import Credentials
+from rrap_mds_is_data_api.model.credentials_request import CredentialsRequest
+from rrap_mds_is_data_api.model.http_validation_error import HTTPValidationError
+from rrap_mds_is_data_api.model.import_response import ImportResponse
+from rrap_mds_is_data_api.model.import_statistics import ImportStatistics
+from rrap_mds_is_data_api.model.input_convert_collection_format_rocrate import InputConvertCollectionFormatRocrate
+from rrap_mds_is_data_api.model.input_convert_rocrate_collection_format import InputConvertRocrateCollectionFormat
+from rrap_mds_is_data_api.model.list_registry_response import ListRegistryResponse
+from rrap_mds_is_data_api.model.location_inner import LocationInner
+from rrap_mds_is_data_api.model.mint_response import MintResponse
+from rrap_mds_is_data_api.model.possible_collection_format import PossibleCollectionFormat
+from rrap_mds_is_data_api.model.possible_rocrate import PossibleRocrate
+from rrap_mds_is_data_api.model.registry_fetch_response import RegistryFetchResponse
+from rrap_mds_is_data_api.model.registry_item import RegistryItem
+from rrap_mds_is_data_api.model.registry_parsed_export import RegistryParsedExport
+from rrap_mds_is_data_api.model.registry_parsed_import import RegistryParsedImport
+from rrap_mds_is_data_api.model.registry_unparsed_export import RegistryUnparsedExport
+from rrap_mds_is_data_api.model.registry_unparsed_import import RegistryUnparsedImport
+from rrap_mds_is_data_api.model.response_convert_collection_format_rocrate import ResponseConvertCollectionFormatRocrate
+from rrap_mds_is_data_api.model.response_convert_rocrate_collection_format import ResponseConvertRocrateCollectionFormat
+from rrap_mds_is_data_api.model.s3_location import S3Location
+from rrap_mds_is_data_api.model.schema import Schema
+from rrap_mds_is_data_api.model.status import Status
+from rrap_mds_is_data_api.model.update_metadata_response import UpdateMetadataResponse
+from rrap_mds_is_data_api.model.user import User
+from rrap_mds_is_data_api.model.validation_error import ValidationError

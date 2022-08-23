@@ -1,4 +1,4 @@
-# openapi_client.RegistryCredentialsApi
+# rrap_mds_is_data_api.RegistryCredentialsApi
 
 All URIs are relative to *http://localhost*
 
@@ -21,15 +21,15 @@ generate_access_credentials Given an S3 location, will attempt to generate progr
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import registry_credentials_api
-from openapi_client.model.credentials_request import CredentialsRequest
-from openapi_client.model.credential_response import CredentialResponse
-from openapi_client.model.http_validation_error import HTTPValidationError
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.api import registry_credentials_api
+from rrap_mds_is_data_api.model.credentials_request import CredentialsRequest
+from rrap_mds_is_data_api.model.credential_response import CredentialResponse
+from rrap_mds_is_data_api.model.http_validation_error import HTTPValidationError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 
@@ -39,13 +39,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = registry_credentials_api.RegistryCredentialsApi(api_client)
     credentials_request = CredentialsRequest(
@@ -62,7 +62,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Generate Read Access Credentials
         api_response = api_instance.generate_read_access_credentials_registry_credentials_generate_read_access_credentials_post(credentials_request)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rrap_mds_is_data_api.ApiException as e:
         print("Exception when calling RegistryCredentialsApi->generate_read_access_credentials_registry_credentials_generate_read_access_credentials_post: %s\n" % e)
 ```
 
@@ -109,15 +109,15 @@ generate_access_credentials Given an S3 location, will attempt to generate progr
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import registry_credentials_api
-from openapi_client.model.credentials_request import CredentialsRequest
-from openapi_client.model.credential_response import CredentialResponse
-from openapi_client.model.http_validation_error import HTTPValidationError
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.api import registry_credentials_api
+from rrap_mds_is_data_api.model.credentials_request import CredentialsRequest
+from rrap_mds_is_data_api.model.credential_response import CredentialResponse
+from rrap_mds_is_data_api.model.http_validation_error import HTTPValidationError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 
@@ -127,13 +127,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = registry_credentials_api.RegistryCredentialsApi(api_client)
     credentials_request = CredentialsRequest(
@@ -150,7 +150,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Generate Write Access Credentials
         api_response = api_instance.generate_write_access_credentials_registry_credentials_generate_write_access_credentials_post(credentials_request)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rrap_mds_is_data_api.ApiException as e:
         print("Exception when calling RegistryCredentialsApi->generate_write_access_credentials_registry_credentials_generate_write_access_credentials_post: %s\n" % e)
 ```
 

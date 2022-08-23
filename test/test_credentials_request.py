@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.s3_location import S3Location
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.model.s3_location import S3Location
 globals()['S3Location'] = S3Location
-from openapi_client.model.credentials_request import CredentialsRequest
+from rrap_mds_is_data_api.model.credentials_request import CredentialsRequest
 
 
 class TestCredentialsRequest(unittest.TestCase):

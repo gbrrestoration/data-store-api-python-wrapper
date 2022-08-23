@@ -10,8 +10,8 @@
 
 import unittest
 
-import openapi_client
-from openapi_client.api.access_check_api import AccessCheckApi  # noqa: E501
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.api.access_check_api import AccessCheckApi  # noqa: E501
 
 
 class TestAccessCheckApi(unittest.TestCase):

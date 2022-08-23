@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.collection_format_conversion import CollectionFormatConversion
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.model.collection_format_conversion import CollectionFormatConversion
 globals()['CollectionFormatConversion'] = CollectionFormatConversion
-from openapi_client.model.input_convert_collection_format_rocrate import InputConvertCollectionFormatRocrate
+from rrap_mds_is_data_api.model.input_convert_collection_format_rocrate import InputConvertCollectionFormatRocrate
 
 
 class TestInputConvertCollectionFormatRocrate(unittest.TestCase):

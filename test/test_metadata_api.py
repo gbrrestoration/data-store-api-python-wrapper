@@ -10,8 +10,8 @@
 
 import unittest
 
-import openapi_client
-from openapi_client.api.metadata_api import MetadataApi  # noqa: E501
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.api.metadata_api import MetadataApi  # noqa: E501
 
 
 class TestMetadataApi(unittest.TestCase):

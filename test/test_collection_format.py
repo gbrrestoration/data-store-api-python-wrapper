@@ -11,12 +11,12 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.collection_format_author import CollectionFormatAuthor
-from openapi_client.model.collection_format_dataset_info import CollectionFormatDatasetInfo
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.model.collection_format_author import CollectionFormatAuthor
+from rrap_mds_is_data_api.model.collection_format_dataset_info import CollectionFormatDatasetInfo
 globals()['CollectionFormatAuthor'] = CollectionFormatAuthor
 globals()['CollectionFormatDatasetInfo'] = CollectionFormatDatasetInfo
-from openapi_client.model.collection_format import CollectionFormat
+from rrap_mds_is_data_api.model.collection_format import CollectionFormat
 
 
 class TestCollectionFormat(unittest.TestCase):

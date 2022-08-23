@@ -1,4 +1,4 @@
-# openapi_client.DefaultApi
+# rrap_mds_is_data_api.DefaultApi
 
 All URIs are relative to *http://localhost*
 
@@ -19,18 +19,18 @@ Function Description --------------------  Demonstration unauthenticated endpoin
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import default_api
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.api import default_api
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient() as api_client:
+with rrap_mds_is_data_api.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
 
@@ -39,7 +39,7 @@ with openapi_client.ApiClient() as api_client:
         # Root
         api_response = api_instance.root_get()
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rrap_mds_is_data_api.ApiException as e:
         print("Exception when calling DefaultApi->root_get: %s\n" % e)
 ```
 

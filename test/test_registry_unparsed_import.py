@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.registry_unparsed_import import RegistryUnparsedImport
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.model.registry_unparsed_import import RegistryUnparsedImport
 
 
 class TestRegistryUnparsedImport(unittest.TestCase):

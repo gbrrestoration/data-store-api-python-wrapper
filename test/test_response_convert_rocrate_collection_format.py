@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.possible_collection_format import PossibleCollectionFormat
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.model.possible_collection_format import PossibleCollectionFormat
 globals()['PossibleCollectionFormat'] = PossibleCollectionFormat
-from openapi_client.model.response_convert_rocrate_collection_format import ResponseConvertRocrateCollectionFormat
+from rrap_mds_is_data_api.model.response_convert_rocrate_collection_format import ResponseConvertRocrateCollectionFormat
 
 
 class TestResponseConvertRocrateCollectionFormat(unittest.TestCase):

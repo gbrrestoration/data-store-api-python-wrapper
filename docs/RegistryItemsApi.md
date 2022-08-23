@@ -1,4 +1,4 @@
-# openapi_client.RegistryItemsApi
+# rrap_mds_is_data_api.RegistryItemsApi
 
 All URIs are relative to *http://localhost*
 
@@ -21,14 +21,14 @@ fetch_dataset Given a unique Handle ID, this function searches the data registry
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import registry_items_api
-from openapi_client.model.registry_fetch_response import RegistryFetchResponse
-from openapi_client.model.http_validation_error import HTTPValidationError
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.api import registry_items_api
+from rrap_mds_is_data_api.model.registry_fetch_response import RegistryFetchResponse
+from rrap_mds_is_data_api.model.http_validation_error import HTTPValidationError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 
@@ -38,13 +38,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = registry_items_api.RegistryItemsApi(api_client)
     handle_id = "handle_id_example" # str | 
@@ -54,7 +54,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Fetch Dataset
         api_response = api_instance.fetch_dataset_registry_items_fetch_dataset_get(handle_id)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rrap_mds_is_data_api.ApiException as e:
         print("Exception when calling RegistryItemsApi->fetch_dataset_registry_items_fetch_dataset_get: %s\n" % e)
 ```
 
@@ -101,13 +101,13 @@ list_all_datasets Lists all data in the data registry. Returns a ListRegistryRes
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import registry_items_api
-from openapi_client.model.list_registry_response import ListRegistryResponse
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.api import registry_items_api
+from rrap_mds_is_data_api.model.list_registry_response import ListRegistryResponse
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 
@@ -117,13 +117,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = registry_items_api.RegistryItemsApi(api_client)
 
@@ -132,7 +132,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # List All Datasets
         api_response = api_instance.list_all_datasets_registry_items_list_all_datasets_get()
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rrap_mds_is_data_api.ApiException as e:
         print("Exception when calling RegistryItemsApi->list_all_datasets_registry_items_list_all_datasets_get: %s\n" % e)
 ```
 

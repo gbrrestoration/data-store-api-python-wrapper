@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.possible_rocrate import PossibleRocrate
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.model.possible_rocrate import PossibleRocrate
 
 
 class TestPossibleRocrate(unittest.TestCase):

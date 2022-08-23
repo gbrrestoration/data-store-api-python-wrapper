@@ -11,12 +11,12 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.import_statistics import ImportStatistics
-from openapi_client.model.status import Status
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.model.import_statistics import ImportStatistics
+from rrap_mds_is_data_api.model.status import Status
 globals()['ImportStatistics'] = ImportStatistics
 globals()['Status'] = Status
-from openapi_client.model.import_response import ImportResponse
+from rrap_mds_is_data_api.model.import_response import ImportResponse
 
 
 class TestImportResponse(unittest.TestCase):

@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.registry_item import RegistryItem
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.model.registry_item import RegistryItem
 globals()['RegistryItem'] = RegistryItem
-from openapi_client.model.registry_parsed_import import RegistryParsedImport
+from rrap_mds_is_data_api.model.registry_parsed_import import RegistryParsedImport
 
 
 class TestRegistryParsedImport(unittest.TestCase):

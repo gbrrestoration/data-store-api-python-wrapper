@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.input_convert_rocrate_collection_format import InputConvertRocrateCollectionFormat
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.model.input_convert_rocrate_collection_format import InputConvertRocrateCollectionFormat
 
 
 class TestInputConvertRocrateCollectionFormat(unittest.TestCase):

@@ -1,4 +1,4 @@
-# openapi_client.MetadataApi
+# rrap_mds_is_data_api.MetadataApi
 
 All URIs are relative to *http://localhost*
 
@@ -21,13 +21,13 @@ Function Description --------------------  Returns the json schema Schema object
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import metadata_api
-from openapi_client.model.schema import Schema
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.api import metadata_api
+from rrap_mds_is_data_api.model.schema import Schema
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 
@@ -37,13 +37,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = metadata_api.MetadataApi(api_client)
 
@@ -52,7 +52,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Get Dataset Schema
         api_response = api_instance.get_dataset_schema_metadata_dataset_schema_get()
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rrap_mds_is_data_api.ApiException as e:
         print("Exception when calling MetadataApi->get_dataset_schema_metadata_dataset_schema_get: %s\n" % e)
 ```
 
@@ -95,15 +95,15 @@ validate_metadata Allows for validation checks without any interaction with exte
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import metadata_api
-from openapi_client.model.status import Status
-from openapi_client.model.http_validation_error import HTTPValidationError
-from openapi_client.model.collection_format import CollectionFormat
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.api import metadata_api
+from rrap_mds_is_data_api.model.collection_format import CollectionFormat
+from rrap_mds_is_data_api.model.http_validation_error import HTTPValidationError
+from rrap_mds_is_data_api.model.status import Status
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 
@@ -113,13 +113,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = metadata_api.MetadataApi(api_client)
     collection_format = CollectionFormat(
@@ -154,7 +154,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Validate Metadata
         api_response = api_instance.validate_metadata_metadata_validate_metadata_post(collection_format)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rrap_mds_is_data_api.ApiException as e:
         print("Exception when calling MetadataApi->validate_metadata_metadata_validate_metadata_post: %s\n" % e)
 ```
 

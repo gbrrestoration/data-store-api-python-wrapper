@@ -10,8 +10,8 @@
 
 import unittest
 
-import openapi_client
-from openapi_client.api.registry_credentials_api import RegistryCredentialsApi  # noqa: E501
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.api.registry_credentials_api import RegistryCredentialsApi  # noqa: E501
 
 
 class TestRegistryCredentialsApi(unittest.TestCase):

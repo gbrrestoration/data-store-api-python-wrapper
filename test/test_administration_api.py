@@ -10,8 +10,8 @@
 
 import unittest
 
-import openapi_client
-from openapi_client.api.administration_api import AdministrationApi  # noqa: E501
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.api.administration_api import AdministrationApi  # noqa: E501
 
 
 class TestAdministrationApi(unittest.TestCase):

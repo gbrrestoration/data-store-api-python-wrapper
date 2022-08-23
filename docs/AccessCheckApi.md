@@ -1,4 +1,4 @@
-# openapi_client.AccessCheckApi
+# rrap_mds_is_data_api.AccessCheckApi
 
 All URIs are relative to *http://localhost*
 
@@ -23,13 +23,13 @@ Function Description --------------------  A check point for the data store whic
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import access_check_api
-from openapi_client.model.user import User
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.api import access_check_api
+from rrap_mds_is_data_api.model.user import User
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 
@@ -39,13 +39,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = access_check_api.AccessCheckApi(api_client)
 
@@ -54,7 +54,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Check Admin Access
         api_response = api_instance.check_admin_access_check_access_check_admin_access_get()
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rrap_mds_is_data_api.ApiException as e:
         print("Exception when calling AccessCheckApi->check_admin_access_check_access_check_admin_access_get: %s\n" % e)
 ```
 
@@ -97,13 +97,13 @@ Function Description --------------------  A check point for the data store whic
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import access_check_api
-from openapi_client.model.user import User
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.api import access_check_api
+from rrap_mds_is_data_api.model.user import User
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 
@@ -113,13 +113,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = access_check_api.AccessCheckApi(api_client)
 
@@ -128,7 +128,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Check General Access
         api_response = api_instance.check_general_access_check_access_check_general_access_get()
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rrap_mds_is_data_api.ApiException as e:
         print("Exception when calling AccessCheckApi->check_general_access_check_access_check_general_access_get: %s\n" % e)
 ```
 
@@ -171,13 +171,13 @@ Function Description --------------------  A check point for the data store fron
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import access_check_api
-from openapi_client.model.user import User
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.api import access_check_api
+from rrap_mds_is_data_api.model.user import User
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 
@@ -187,13 +187,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = access_check_api.AccessCheckApi(api_client)
 
@@ -202,7 +202,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Check Read Access
         api_response = api_instance.check_read_access_check_access_check_read_access_get()
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rrap_mds_is_data_api.ApiException as e:
         print("Exception when calling AccessCheckApi->check_read_access_check_access_check_read_access_get: %s\n" % e)
 ```
 
@@ -245,13 +245,13 @@ Function Description --------------------  A check point for the data store fron
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import access_check_api
-from openapi_client.model.user import User
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.api import access_check_api
+from rrap_mds_is_data_api.model.user import User
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 
@@ -261,13 +261,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = access_check_api.AccessCheckApi(api_client)
 
@@ -276,7 +276,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Check Write Access
         api_response = api_instance.check_write_access_check_access_check_write_access_get()
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rrap_mds_is_data_api.ApiException as e:
         print("Exception when calling AccessCheckApi->check_write_access_check_access_check_write_access_get: %s\n" % e)
 ```
 

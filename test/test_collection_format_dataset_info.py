@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.collection_format_organisation import CollectionFormatOrganisation
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.model.collection_format_organisation import CollectionFormatOrganisation
 globals()['CollectionFormatOrganisation'] = CollectionFormatOrganisation
-from openapi_client.model.collection_format_dataset_info import CollectionFormatDatasetInfo
+from rrap_mds_is_data_api.model.collection_format_dataset_info import CollectionFormatDatasetInfo
 
 
 class TestCollectionFormatDatasetInfo(unittest.TestCase):

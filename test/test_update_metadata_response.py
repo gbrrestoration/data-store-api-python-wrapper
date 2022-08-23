@@ -11,12 +11,12 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.s3_location import S3Location
-from openapi_client.model.status import Status
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.model.s3_location import S3Location
+from rrap_mds_is_data_api.model.status import Status
 globals()['S3Location'] = S3Location
 globals()['Status'] = Status
-from openapi_client.model.update_metadata_response import UpdateMetadataResponse
+from rrap_mds_is_data_api.model.update_metadata_response import UpdateMetadataResponse
 
 
 class TestUpdateMetadataResponse(unittest.TestCase):

@@ -11,12 +11,12 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.collection_format import CollectionFormat
-from openapi_client.model.s3_location import S3Location
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.model.collection_format import CollectionFormat
+from rrap_mds_is_data_api.model.s3_location import S3Location
 globals()['CollectionFormat'] = CollectionFormat
 globals()['S3Location'] = S3Location
-from openapi_client.model.collection_format_conversion import CollectionFormatConversion
+from rrap_mds_is_data_api.model.collection_format_conversion import CollectionFormatConversion
 
 
 class TestCollectionFormatConversion(unittest.TestCase):

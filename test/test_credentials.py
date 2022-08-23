@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.credentials import Credentials
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.model.credentials import Credentials
 
 
 class TestCredentials(unittest.TestCase):

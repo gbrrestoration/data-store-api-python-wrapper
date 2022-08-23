@@ -11,10 +11,10 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.validation_error import ValidationError
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.model.validation_error import ValidationError
 globals()['ValidationError'] = ValidationError
-from openapi_client.model.http_validation_error import HTTPValidationError
+from rrap_mds_is_data_api.model.http_validation_error import HTTPValidationError
 
 
 class TestHTTPValidationError(unittest.TestCase):

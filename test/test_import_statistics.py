@@ -11,8 +11,8 @@
 import sys
 import unittest
 
-import openapi_client
-from openapi_client.model.import_statistics import ImportStatistics
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.model.import_statistics import ImportStatistics
 
 
 class TestImportStatistics(unittest.TestCase):

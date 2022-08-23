@@ -1,4 +1,4 @@
-# openapi_client.RegisterDatasetApi
+# rrap_mds_is_data_api.RegisterDatasetApi
 
 All URIs are relative to *http://localhost*
 
@@ -21,15 +21,15 @@ get_dataset_schema Given the metadata and handle id, will re-parse the metadata 
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import register_dataset_api
-from openapi_client.model.update_metadata_response import UpdateMetadataResponse
-from openapi_client.model.http_validation_error import HTTPValidationError
-from openapi_client.model.collection_format import CollectionFormat
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.api import register_dataset_api
+from rrap_mds_is_data_api.model.collection_format import CollectionFormat
+from rrap_mds_is_data_api.model.update_metadata_response import UpdateMetadataResponse
+from rrap_mds_is_data_api.model.http_validation_error import HTTPValidationError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 
@@ -39,13 +39,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = register_dataset_api.RegisterDatasetApi(api_client)
     handle_id = "handle_id_example" # str | 
@@ -81,7 +81,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Get Dataset Schema
         api_response = api_instance.get_dataset_schema_register_update_metadata_post(handle_id, collection_format)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rrap_mds_is_data_api.ApiException as e:
         print("Exception when calling RegisterDatasetApi->get_dataset_schema_register_update_metadata_post: %s\n" % e)
 ```
 
@@ -129,15 +129,15 @@ Function Description --------------------  Used by the front end to prepare the 
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import register_dataset_api
-from openapi_client.model.http_validation_error import HTTPValidationError
-from openapi_client.model.collection_format import CollectionFormat
-from openapi_client.model.mint_response import MintResponse
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.api import register_dataset_api
+from rrap_mds_is_data_api.model.collection_format import CollectionFormat
+from rrap_mds_is_data_api.model.mint_response import MintResponse
+from rrap_mds_is_data_api.model.http_validation_error import HTTPValidationError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 
@@ -147,13 +147,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = register_dataset_api.RegisterDatasetApi(api_client)
     collection_format = CollectionFormat(
@@ -188,7 +188,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Mint Dataset
         api_response = api_instance.mint_dataset_register_mint_dataset_post(collection_format)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rrap_mds_is_data_api.ApiException as e:
         print("Exception when calling RegisterDatasetApi->mint_dataset_register_mint_dataset_post: %s\n" % e)
 ```
 

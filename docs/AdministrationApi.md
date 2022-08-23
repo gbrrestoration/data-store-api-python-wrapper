@@ -1,4 +1,4 @@
-# openapi_client.AdministrationApi
+# rrap_mds_is_data_api.AdministrationApi
 
 All URIs are relative to *http://localhost*
 
@@ -25,15 +25,15 @@ convert_collection_format_rocrate Given a list of collection format inputs will 
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import administration_api
-from openapi_client.model.response_convert_collection_format_rocrate import ResponseConvertCollectionFormatRocrate
-from openapi_client.model.http_validation_error import HTTPValidationError
-from openapi_client.model.input_convert_collection_format_rocrate import InputConvertCollectionFormatRocrate
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.api import administration_api
+from rrap_mds_is_data_api.model.response_convert_collection_format_rocrate import ResponseConvertCollectionFormatRocrate
+from rrap_mds_is_data_api.model.input_convert_collection_format_rocrate import InputConvertCollectionFormatRocrate
+from rrap_mds_is_data_api.model.http_validation_error import HTTPValidationError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 
@@ -43,13 +43,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = administration_api.AdministrationApi(api_client)
     input_convert_collection_format_rocrate = InputConvertCollectionFormatRocrate(
@@ -98,7 +98,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Convert Collection Format Rocrate
         api_response = api_instance.convert_collection_format_rocrate_admin_registry_convert_collection_format_ro_crate_post(input_convert_collection_format_rocrate)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rrap_mds_is_data_api.ApiException as e:
         print("Exception when calling AdministrationApi->convert_collection_format_rocrate_admin_registry_convert_collection_format_ro_crate_post: %s\n" % e)
 ```
 
@@ -145,15 +145,15 @@ convert_rocrate_collection_format Given a list of rocrate items will return a li
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import administration_api
-from openapi_client.model.response_convert_rocrate_collection_format import ResponseConvertRocrateCollectionFormat
-from openapi_client.model.http_validation_error import HTTPValidationError
-from openapi_client.model.input_convert_rocrate_collection_format import InputConvertRocrateCollectionFormat
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.api import administration_api
+from rrap_mds_is_data_api.model.input_convert_rocrate_collection_format import InputConvertRocrateCollectionFormat
+from rrap_mds_is_data_api.model.response_convert_rocrate_collection_format import ResponseConvertRocrateCollectionFormat
+from rrap_mds_is_data_api.model.http_validation_error import HTTPValidationError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 
@@ -163,13 +163,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = administration_api.AdministrationApi(api_client)
     input_convert_rocrate_collection_format = InputConvertRocrateCollectionFormat(
@@ -183,7 +183,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Convert Rocrate Collection Format
         api_response = api_instance.convert_rocrate_collection_format_admin_registry_convert_rocrate_collection_format_post(input_convert_rocrate_collection_format)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rrap_mds_is_data_api.ApiException as e:
         print("Exception when calling AdministrationApi->convert_rocrate_collection_format_admin_registry_convert_rocrate_collection_format_post: %s\n" % e)
 ```
 
@@ -230,13 +230,13 @@ export_registry_parsed Returns all the registry items parsed into the current Re
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import administration_api
-from openapi_client.model.registry_parsed_export import RegistryParsedExport
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.api import administration_api
+from rrap_mds_is_data_api.model.registry_parsed_export import RegistryParsedExport
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 
@@ -246,13 +246,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = administration_api.AdministrationApi(api_client)
 
@@ -261,7 +261,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Export Registry Parsed
         api_response = api_instance.export_registry_parsed_admin_registry_export_parsed_get()
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rrap_mds_is_data_api.ApiException as e:
         print("Exception when calling AdministrationApi->export_registry_parsed_admin_registry_export_parsed_get: %s\n" % e)
 ```
 
@@ -304,13 +304,13 @@ export_registry_unparsed Returns all the registry items without first parsing th
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import administration_api
-from openapi_client.model.registry_unparsed_export import RegistryUnparsedExport
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.api import administration_api
+from rrap_mds_is_data_api.model.registry_unparsed_export import RegistryUnparsedExport
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 
@@ -320,13 +320,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = administration_api.AdministrationApi(api_client)
 
@@ -335,7 +335,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Export Registry Unparsed
         api_response = api_instance.export_registry_unparsed_admin_registry_export_unparsed_get()
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rrap_mds_is_data_api.ApiException as e:
         print("Exception when calling AdministrationApi->export_registry_unparsed_admin_registry_export_unparsed_get: %s\n" % e)
 ```
 
@@ -378,15 +378,15 @@ import_registry_parsed Given a list of registry items (parsed as valid before be
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import administration_api
-from openapi_client.model.import_response import ImportResponse
-from openapi_client.model.http_validation_error import HTTPValidationError
-from openapi_client.model.registry_parsed_import import RegistryParsedImport
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.api import administration_api
+from rrap_mds_is_data_api.model.import_response import ImportResponse
+from rrap_mds_is_data_api.model.registry_parsed_import import RegistryParsedImport
+from rrap_mds_is_data_api.model.http_validation_error import HTTPValidationError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 
@@ -396,13 +396,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = administration_api.AdministrationApi(api_client)
     registry_parsed_import = RegistryParsedImport(
@@ -455,7 +455,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Import Registry Parsed
         api_response = api_instance.import_registry_parsed_admin_registry_import_parsed_post(registry_parsed_import)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rrap_mds_is_data_api.ApiException as e:
         print("Exception when calling AdministrationApi->import_registry_parsed_admin_registry_import_parsed_post: %s\n" % e)
 ```
 
@@ -502,15 +502,15 @@ import_registry_unparsed Given a list of unparsed - unvalidated -registry items 
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import administration_api
-from openapi_client.model.import_response import ImportResponse
-from openapi_client.model.http_validation_error import HTTPValidationError
-from openapi_client.model.registry_unparsed_import import RegistryUnparsedImport
+import rrap_mds_is_data_api
+from rrap_mds_is_data_api.api import administration_api
+from rrap_mds_is_data_api.model.import_response import ImportResponse
+from rrap_mds_is_data_api.model.registry_unparsed_import import RegistryUnparsedImport
+from rrap_mds_is_data_api.model.http_validation_error import HTTPValidationError
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 
@@ -520,13 +520,13 @@ configuration = openapi_client.Configuration(
 # satisfies your auth use case.
 
 # Configure OAuth2 access token for authorization: OAuth2PasswordBearer
-configuration = openapi_client.Configuration(
+configuration = rrap_mds_is_data_api.Configuration(
     host = "http://localhost"
 )
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = administration_api.AdministrationApi(api_client)
     registry_unparsed_import = RegistryUnparsedImport(
@@ -543,7 +543,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Import Registry Unparsed
         api_response = api_instance.import_registry_unparsed_admin_registry_import_unparsed_post(registry_unparsed_import)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except rrap_mds_is_data_api.ApiException as e:
         print("Exception when calling AdministrationApi->import_registry_unparsed_admin_registry_import_unparsed_post: %s\n" % e)
 ```
 

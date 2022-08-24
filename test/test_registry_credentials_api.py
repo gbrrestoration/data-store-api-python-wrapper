@@ -23,15 +23,15 @@ class TestRegistryCredentialsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_generate_read_access_credentials_registry_credentials_generate_read_access_credentials_post(self):
-        """Test case for generate_read_access_credentials_registry_credentials_generate_read_access_credentials_post
+    def test_generate_read_access_credentials(self):
+        """Test case for generate_read_access_credentials
 
         Generate Read Access Credentials  # noqa: E501
         """
         pass
 
-    def test_generate_write_access_credentials_registry_credentials_generate_write_access_credentials_post(self):
-        """Test case for generate_write_access_credentials_registry_credentials_generate_write_access_credentials_post
+    def test_generate_write_access_credentials(self):
+        """Test case for generate_write_access_credentials
 
         Generate Write Access Credentials  # noqa: E501
         """

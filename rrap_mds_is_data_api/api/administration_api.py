@@ -44,14 +44,14 @@ class AdministrationApi(object):
         if api_client is None:
             api_client = ApiClient()
         self.api_client = api_client
-        self.convert_collection_format_rocrate_admin_registry_convert_collection_format_ro_crate_post_endpoint = _Endpoint(
+        self.convert_from_collection_format_to_ro_crate_endpoint = _Endpoint(
             settings={
                 'response_type': (ResponseConvertCollectionFormatRocrate,),
                 'auth': [
                     'OAuth2PasswordBearer'
                 ],
                 'endpoint_path': '/admin/registry/convert/collection-format/ro-crate',
-                'operation_id': 'convert_collection_format_rocrate_admin_registry_convert_collection_format_ro_crate_post',
+                'operation_id': 'convert_from_collection_format_to_ro_crate',
                 'http_method': 'POST',
                 'servers': None,
             },
@@ -96,14 +96,14 @@ class AdministrationApi(object):
             },
             api_client=api_client
         )
-        self.convert_rocrate_collection_format_admin_registry_convert_rocrate_collection_format_post_endpoint = _Endpoint(
+        self.convert_from_ro_crate_to_collection_format_endpoint = _Endpoint(
             settings={
                 'response_type': (ResponseConvertRocrateCollectionFormat,),
                 'auth': [
                     'OAuth2PasswordBearer'
                 ],
                 'endpoint_path': '/admin/registry/convert/rocrate/collection-format',
-                'operation_id': 'convert_rocrate_collection_format_admin_registry_convert_rocrate_collection_format_post',
+                'operation_id': 'convert_from_ro_crate_to_collection_format',
                 'http_method': 'POST',
                 'servers': None,
             },
@@ -148,14 +148,14 @@ class AdministrationApi(object):
             },
             api_client=api_client
         )
-        self.export_registry_parsed_admin_registry_export_parsed_get_endpoint = _Endpoint(
+        self.export_parsed_endpoint = _Endpoint(
             settings={
                 'response_type': (RegistryParsedExport,),
                 'auth': [
                     'OAuth2PasswordBearer'
                 ],
                 'endpoint_path': '/admin/registry/export/parsed',
-                'operation_id': 'export_registry_parsed_admin_registry_export_parsed_get',
+                'operation_id': 'export_parsed',
                 'http_method': 'GET',
                 'servers': None,
             },
@@ -192,14 +192,14 @@ class AdministrationApi(object):
             },
             api_client=api_client
         )
-        self.export_registry_unparsed_admin_registry_export_unparsed_get_endpoint = _Endpoint(
+        self.export_unparsed_endpoint = _Endpoint(
             settings={
                 'response_type': (RegistryUnparsedExport,),
                 'auth': [
                     'OAuth2PasswordBearer'
                 ],
                 'endpoint_path': '/admin/registry/export/unparsed',
-                'operation_id': 'export_registry_unparsed_admin_registry_export_unparsed_get',
+                'operation_id': 'export_unparsed',
                 'http_method': 'GET',
                 'servers': None,
             },
@@ -236,14 +236,14 @@ class AdministrationApi(object):
             },
             api_client=api_client
         )
-        self.import_registry_parsed_admin_registry_import_parsed_post_endpoint = _Endpoint(
+        self.import_parsed_endpoint = _Endpoint(
             settings={
                 'response_type': (ImportResponse,),
                 'auth': [
                     'OAuth2PasswordBearer'
                 ],
                 'endpoint_path': '/admin/registry/import/parsed',
-                'operation_id': 'import_registry_parsed_admin_registry_import_parsed_post',
+                'operation_id': 'import_parsed',
                 'http_method': 'POST',
                 'servers': None,
             },
@@ -288,14 +288,14 @@ class AdministrationApi(object):
             },
             api_client=api_client
         )
-        self.import_registry_unparsed_admin_registry_import_unparsed_post_endpoint = _Endpoint(
+        self.import_unparsed_endpoint = _Endpoint(
             settings={
                 'response_type': (ImportResponse,),
                 'auth': [
                     'OAuth2PasswordBearer'
                 ],
                 'endpoint_path': '/admin/registry/import/unparsed',
-                'operation_id': 'import_registry_unparsed_admin_registry_import_unparsed_post',
+                'operation_id': 'import_unparsed',
                 'http_method': 'POST',
                 'servers': None,
             },
@@ -341,7 +341,7 @@ class AdministrationApi(object):
             api_client=api_client
         )
 
-    def convert_collection_format_rocrate_admin_registry_convert_collection_format_ro_crate_post(
+    def convert_from_collection_format_to_ro_crate(
         self,
         input_convert_collection_format_rocrate,
         **kwargs
@@ -352,7 +352,7 @@ class AdministrationApi(object):
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.convert_collection_format_rocrate_admin_registry_convert_collection_format_ro_crate_post(input_convert_collection_format_rocrate, async_req=True)
+        >>> thread = api.convert_from_collection_format_to_ro_crate(input_convert_collection_format_rocrate, async_req=True)
         >>> result = thread.get()
 
         Args:
@@ -422,9 +422,9 @@ class AdministrationApi(object):
         kwargs['_request_auths'] = kwargs.get('_request_auths', None)
         kwargs['input_convert_collection_format_rocrate'] = \
             input_convert_collection_format_rocrate
-        return self.convert_collection_format_rocrate_admin_registry_convert_collection_format_ro_crate_post_endpoint.call_with_http_info(**kwargs)
+        return self.convert_from_collection_format_to_ro_crate_endpoint.call_with_http_info(**kwargs)
 
-    def convert_rocrate_collection_format_admin_registry_convert_rocrate_collection_format_post(
+    def convert_from_ro_crate_to_collection_format(
         self,
         input_convert_rocrate_collection_format,
         **kwargs
@@ -435,7 +435,7 @@ class AdministrationApi(object):
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.convert_rocrate_collection_format_admin_registry_convert_rocrate_collection_format_post(input_convert_rocrate_collection_format, async_req=True)
+        >>> thread = api.convert_from_ro_crate_to_collection_format(input_convert_rocrate_collection_format, async_req=True)
         >>> result = thread.get()
 
         Args:
@@ -505,9 +505,9 @@ class AdministrationApi(object):
         kwargs['_request_auths'] = kwargs.get('_request_auths', None)
         kwargs['input_convert_rocrate_collection_format'] = \
             input_convert_rocrate_collection_format
-        return self.convert_rocrate_collection_format_admin_registry_convert_rocrate_collection_format_post_endpoint.call_with_http_info(**kwargs)
+        return self.convert_from_ro_crate_to_collection_format_endpoint.call_with_http_info(**kwargs)
 
-    def export_registry_parsed_admin_registry_export_parsed_get(
+    def export_parsed(
         self,
         **kwargs
     ):
@@ -517,7 +517,7 @@ class AdministrationApi(object):
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.export_registry_parsed_admin_registry_export_parsed_get(async_req=True)
+        >>> thread = api.export_parsed(async_req=True)
         >>> result = thread.get()
 
 
@@ -583,9 +583,9 @@ class AdministrationApi(object):
             '_content_type')
         kwargs['_host_index'] = kwargs.get('_host_index')
         kwargs['_request_auths'] = kwargs.get('_request_auths', None)
-        return self.export_registry_parsed_admin_registry_export_parsed_get_endpoint.call_with_http_info(**kwargs)
+        return self.export_parsed_endpoint.call_with_http_info(**kwargs)
 
-    def export_registry_unparsed_admin_registry_export_unparsed_get(
+    def export_unparsed(
         self,
         **kwargs
     ):
@@ -595,7 +595,7 @@ class AdministrationApi(object):
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.export_registry_unparsed_admin_registry_export_unparsed_get(async_req=True)
+        >>> thread = api.export_unparsed(async_req=True)
         >>> result = thread.get()
 
 
@@ -661,9 +661,9 @@ class AdministrationApi(object):
             '_content_type')
         kwargs['_host_index'] = kwargs.get('_host_index')
         kwargs['_request_auths'] = kwargs.get('_request_auths', None)
-        return self.export_registry_unparsed_admin_registry_export_unparsed_get_endpoint.call_with_http_info(**kwargs)
+        return self.export_unparsed_endpoint.call_with_http_info(**kwargs)
 
-    def import_registry_parsed_admin_registry_import_parsed_post(
+    def import_parsed(
         self,
         registry_parsed_import,
         **kwargs
@@ -674,7 +674,7 @@ class AdministrationApi(object):
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.import_registry_parsed_admin_registry_import_parsed_post(registry_parsed_import, async_req=True)
+        >>> thread = api.import_parsed(registry_parsed_import, async_req=True)
         >>> result = thread.get()
 
         Args:
@@ -744,9 +744,9 @@ class AdministrationApi(object):
         kwargs['_request_auths'] = kwargs.get('_request_auths', None)
         kwargs['registry_parsed_import'] = \
             registry_parsed_import
-        return self.import_registry_parsed_admin_registry_import_parsed_post_endpoint.call_with_http_info(**kwargs)
+        return self.import_parsed_endpoint.call_with_http_info(**kwargs)
 
-    def import_registry_unparsed_admin_registry_import_unparsed_post(
+    def import_unparsed(
         self,
         registry_unparsed_import,
         **kwargs
@@ -757,7 +757,7 @@ class AdministrationApi(object):
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.import_registry_unparsed_admin_registry_import_unparsed_post(registry_unparsed_import, async_req=True)
+        >>> thread = api.import_unparsed(registry_unparsed_import, async_req=True)
         >>> result = thread.get()
 
         Args:
@@ -827,5 +827,5 @@ class AdministrationApi(object):
         kwargs['_request_auths'] = kwargs.get('_request_auths', None)
         kwargs['registry_unparsed_import'] = \
             registry_unparsed_import
-        return self.import_registry_unparsed_admin_registry_import_unparsed_post_endpoint.call_with_http_info(**kwargs)
+        return self.import_unparsed_endpoint.call_with_http_info(**kwargs)
 

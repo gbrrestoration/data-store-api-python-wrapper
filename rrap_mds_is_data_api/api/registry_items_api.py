@@ -37,14 +37,14 @@ class RegistryItemsApi(object):
         if api_client is None:
             api_client = ApiClient()
         self.api_client = api_client
-        self.fetch_dataset_registry_items_fetch_dataset_get_endpoint = _Endpoint(
+        self.fetch_dataset_endpoint = _Endpoint(
             settings={
                 'response_type': (RegistryFetchResponse,),
                 'auth': [
                     'OAuth2PasswordBearer'
                 ],
                 'endpoint_path': '/registry/items/fetch-dataset',
-                'operation_id': 'fetch_dataset_registry_items_fetch_dataset_get',
+                'operation_id': 'fetch_dataset',
                 'http_method': 'GET',
                 'servers': None,
             },
@@ -88,14 +88,14 @@ class RegistryItemsApi(object):
             },
             api_client=api_client
         )
-        self.list_all_datasets_registry_items_list_all_datasets_get_endpoint = _Endpoint(
+        self.list_all_datasets_endpoint = _Endpoint(
             settings={
                 'response_type': (ListRegistryResponse,),
                 'auth': [
                     'OAuth2PasswordBearer'
                 ],
                 'endpoint_path': '/registry/items/list-all-datasets',
-                'operation_id': 'list_all_datasets_registry_items_list_all_datasets_get',
+                'operation_id': 'list_all_datasets',
                 'http_method': 'GET',
                 'servers': None,
             },
@@ -133,7 +133,7 @@ class RegistryItemsApi(object):
             api_client=api_client
         )
 
-    def fetch_dataset_registry_items_fetch_dataset_get(
+    def fetch_dataset(
         self,
         handle_id,
         **kwargs
@@ -144,7 +144,7 @@ class RegistryItemsApi(object):
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.fetch_dataset_registry_items_fetch_dataset_get(handle_id, async_req=True)
+        >>> thread = api.fetch_dataset(handle_id, async_req=True)
         >>> result = thread.get()
 
         Args:
@@ -214,9 +214,9 @@ class RegistryItemsApi(object):
         kwargs['_request_auths'] = kwargs.get('_request_auths', None)
         kwargs['handle_id'] = \
             handle_id
-        return self.fetch_dataset_registry_items_fetch_dataset_get_endpoint.call_with_http_info(**kwargs)
+        return self.fetch_dataset_endpoint.call_with_http_info(**kwargs)
 
-    def list_all_datasets_registry_items_list_all_datasets_get(
+    def list_all_datasets(
         self,
         **kwargs
     ):
@@ -226,7 +226,7 @@ class RegistryItemsApi(object):
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.list_all_datasets_registry_items_list_all_datasets_get(async_req=True)
+        >>> thread = api.list_all_datasets(async_req=True)
         >>> result = thread.get()
 
 
@@ -292,5 +292,5 @@ class RegistryItemsApi(object):
             '_content_type')
         kwargs['_host_index'] = kwargs.get('_host_index')
         kwargs['_request_auths'] = kwargs.get('_request_auths', None)
-        return self.list_all_datasets_registry_items_list_all_datasets_get_endpoint.call_with_http_info(**kwargs)
+        return self.list_all_datasets_endpoint.call_with_http_info(**kwargs)
 

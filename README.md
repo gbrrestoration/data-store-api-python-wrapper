@@ -76,10 +76,10 @@ with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
 
     try:
         # Check Admin Access
-        api_response = api_instance.check_admin_access_check_access_check_admin_access_get()
+        api_response = api_instance.check_admin_access()
         pprint(api_response)
     except rrap_mds_is_data_api.ApiException as e:
-        print("Exception when calling AccessCheckApi->check_admin_access_check_access_check_admin_access_get: %s\n" % e)
+        print("Exception when calling AccessCheckApi->check_admin_access: %s\n" % e)
 ```
 
 ## Documentation for API Endpoints
@@ -88,25 +88,25 @@ All URIs are relative to *http://localhost*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*AccessCheckApi* | [**check_admin_access_check_access_check_admin_access_get**](docs/AccessCheckApi.md#check_admin_access_check_access_check_admin_access_get) | **GET** /check-access/check-admin-access | Check Admin Access
-*AccessCheckApi* | [**check_general_access_check_access_check_general_access_get**](docs/AccessCheckApi.md#check_general_access_check_access_check_general_access_get) | **GET** /check-access/check-general-access | Check General Access
-*AccessCheckApi* | [**check_read_access_check_access_check_read_access_get**](docs/AccessCheckApi.md#check_read_access_check_access_check_read_access_get) | **GET** /check-access/check-read-access | Check Read Access
-*AccessCheckApi* | [**check_write_access_check_access_check_write_access_get**](docs/AccessCheckApi.md#check_write_access_check_access_check_write_access_get) | **GET** /check-access/check-write-access | Check Write Access
-*AdministrationApi* | [**convert_collection_format_rocrate_admin_registry_convert_collection_format_ro_crate_post**](docs/AdministrationApi.md#convert_collection_format_rocrate_admin_registry_convert_collection_format_ro_crate_post) | **POST** /admin/registry/convert/collection-format/ro-crate | Convert Collection Format Rocrate
-*AdministrationApi* | [**convert_rocrate_collection_format_admin_registry_convert_rocrate_collection_format_post**](docs/AdministrationApi.md#convert_rocrate_collection_format_admin_registry_convert_rocrate_collection_format_post) | **POST** /admin/registry/convert/rocrate/collection-format | Convert Rocrate Collection Format
-*AdministrationApi* | [**export_registry_parsed_admin_registry_export_parsed_get**](docs/AdministrationApi.md#export_registry_parsed_admin_registry_export_parsed_get) | **GET** /admin/registry/export/parsed | Export Registry Parsed
-*AdministrationApi* | [**export_registry_unparsed_admin_registry_export_unparsed_get**](docs/AdministrationApi.md#export_registry_unparsed_admin_registry_export_unparsed_get) | **GET** /admin/registry/export/unparsed | Export Registry Unparsed
-*AdministrationApi* | [**import_registry_parsed_admin_registry_import_parsed_post**](docs/AdministrationApi.md#import_registry_parsed_admin_registry_import_parsed_post) | **POST** /admin/registry/import/parsed | Import Registry Parsed
-*AdministrationApi* | [**import_registry_unparsed_admin_registry_import_unparsed_post**](docs/AdministrationApi.md#import_registry_unparsed_admin_registry_import_unparsed_post) | **POST** /admin/registry/import/unparsed | Import Registry Unparsed
-*MetadataApi* | [**get_dataset_schema_metadata_dataset_schema_get**](docs/MetadataApi.md#get_dataset_schema_metadata_dataset_schema_get) | **GET** /metadata/dataset-schema | Get Dataset Schema
-*MetadataApi* | [**validate_metadata_metadata_validate_metadata_post**](docs/MetadataApi.md#validate_metadata_metadata_validate_metadata_post) | **POST** /metadata/validate-metadata | Validate Metadata
-*RegisterDatasetApi* | [**get_dataset_schema_register_update_metadata_post**](docs/RegisterDatasetApi.md#get_dataset_schema_register_update_metadata_post) | **POST** /register/update-metadata | Get Dataset Schema
-*RegisterDatasetApi* | [**mint_dataset_register_mint_dataset_post**](docs/RegisterDatasetApi.md#mint_dataset_register_mint_dataset_post) | **POST** /register/mint-dataset | Mint Dataset
-*RegistryItemsApi* | [**fetch_dataset_registry_items_fetch_dataset_get**](docs/RegistryItemsApi.md#fetch_dataset_registry_items_fetch_dataset_get) | **GET** /registry/items/fetch-dataset | Fetch Dataset
-*RegistryItemsApi* | [**list_all_datasets_registry_items_list_all_datasets_get**](docs/RegistryItemsApi.md#list_all_datasets_registry_items_list_all_datasets_get) | **GET** /registry/items/list-all-datasets | List All Datasets
-*RegistryCredentialsApi* | [**generate_read_access_credentials_registry_credentials_generate_read_access_credentials_post**](docs/RegistryCredentialsApi.md#generate_read_access_credentials_registry_credentials_generate_read_access_credentials_post) | **POST** /registry/credentials/generate-read-access-credentials | Generate Read Access Credentials
-*RegistryCredentialsApi* | [**generate_write_access_credentials_registry_credentials_generate_write_access_credentials_post**](docs/RegistryCredentialsApi.md#generate_write_access_credentials_registry_credentials_generate_write_access_credentials_post) | **POST** /registry/credentials/generate-write-access-credentials | Generate Write Access Credentials
-*DefaultApi* | [**root_get**](docs/DefaultApi.md#root_get) | **GET** / | Root
+*AccessCheckApi* | [**check_admin_access**](docs/AccessCheckApi.md#check_admin_access) | **GET** /check-access/check-admin-access | Check Admin Access
+*AccessCheckApi* | [**check_general_access**](docs/AccessCheckApi.md#check_general_access) | **GET** /check-access/check-general-access | Check General Access
+*AccessCheckApi* | [**check_read_access**](docs/AccessCheckApi.md#check_read_access) | **GET** /check-access/check-read-access | Check Read Access
+*AccessCheckApi* | [**check_write_access**](docs/AccessCheckApi.md#check_write_access) | **GET** /check-access/check-write-access | Check Write Access
+*AdministrationApi* | [**convert_from_collection_format_to_ro_crate**](docs/AdministrationApi.md#convert_from_collection_format_to_ro_crate) | **POST** /admin/registry/convert/collection-format/ro-crate | Convert Collection Format Rocrate
+*AdministrationApi* | [**convert_from_ro_crate_to_collection_format**](docs/AdministrationApi.md#convert_from_ro_crate_to_collection_format) | **POST** /admin/registry/convert/rocrate/collection-format | Convert Rocrate Collection Format
+*AdministrationApi* | [**export_parsed**](docs/AdministrationApi.md#export_parsed) | **GET** /admin/registry/export/parsed | Export Registry Parsed
+*AdministrationApi* | [**export_unparsed**](docs/AdministrationApi.md#export_unparsed) | **GET** /admin/registry/export/unparsed | Export Registry Unparsed
+*AdministrationApi* | [**import_parsed**](docs/AdministrationApi.md#import_parsed) | **POST** /admin/registry/import/parsed | Import Registry Parsed
+*AdministrationApi* | [**import_unparsed**](docs/AdministrationApi.md#import_unparsed) | **POST** /admin/registry/import/unparsed | Import Registry Unparsed
+*MetadataApi* | [**get_dataset_schema**](docs/MetadataApi.md#get_dataset_schema) | **GET** /metadata/dataset-schema | Get Dataset Schema
+*MetadataApi* | [**validate_metadata**](docs/MetadataApi.md#validate_metadata) | **POST** /metadata/validate-metadata | Validate Metadata
+*RegisterDatasetApi* | [**mint_dataset**](docs/RegisterDatasetApi.md#mint_dataset) | **POST** /register/mint-dataset | Mint Dataset
+*RegisterDatasetApi* | [**update_metadata**](docs/RegisterDatasetApi.md#update_metadata) | **POST** /register/update-metadata | Get Dataset Schema
+*RegistryItemsApi* | [**fetch_dataset**](docs/RegistryItemsApi.md#fetch_dataset) | **GET** /registry/items/fetch-dataset | Fetch Dataset
+*RegistryItemsApi* | [**list_all_datasets**](docs/RegistryItemsApi.md#list_all_datasets) | **GET** /registry/items/list-all-datasets | List All Datasets
+*RegistryCredentialsApi* | [**generate_read_access_credentials**](docs/RegistryCredentialsApi.md#generate_read_access_credentials) | **POST** /registry/credentials/generate-read-access-credentials | Generate Read Access Credentials
+*RegistryCredentialsApi* | [**generate_write_access_credentials**](docs/RegistryCredentialsApi.md#generate_write_access_credentials) | **POST** /registry/credentials/generate-write-access-credentials | Generate Write Access Credentials
+*DefaultApi* | [**root**](docs/DefaultApi.md#root) | **GET** / | Root
 
 
 ## Documentation For Models

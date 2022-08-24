@@ -23,8 +23,8 @@ class TestDefaultApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_root_get(self):
-        """Test case for root_get
+    def test_root(self):
+        """Test case for root
 
         Root  # noqa: E501
         """

@@ -34,12 +34,12 @@ class DefaultApi(object):
         if api_client is None:
             api_client = ApiClient()
         self.api_client = api_client
-        self.root_get_endpoint = _Endpoint(
+        self.root_endpoint = _Endpoint(
             settings={
                 'response_type': (bool, date, datetime, dict, float, int, list, str, none_type,),
                 'auth': [],
                 'endpoint_path': '/',
-                'operation_id': 'root_get',
+                'operation_id': 'root',
                 'http_method': 'GET',
                 'servers': None,
             },
@@ -77,7 +77,7 @@ class DefaultApi(object):
             api_client=api_client
         )
 
-    def root_get(
+    def root(
         self,
         **kwargs
     ):
@@ -87,7 +87,7 @@ class DefaultApi(object):
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.root_get(async_req=True)
+        >>> thread = api.root(async_req=True)
         >>> result = thread.get()
 
 
@@ -153,5 +153,5 @@ class DefaultApi(object):
             '_content_type')
         kwargs['_host_index'] = kwargs.get('_host_index')
         kwargs['_request_auths'] = kwargs.get('_request_auths', None)
-        return self.root_get_endpoint.call_with_http_info(**kwargs)
+        return self.root_endpoint.call_with_http_info(**kwargs)
 

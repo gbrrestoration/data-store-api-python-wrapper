@@ -4,11 +4,11 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**root_get**](DefaultApi.md#root_get) | **GET** / | Root
+[**root**](DefaultApi.md#root) | **GET** / | Root
 
 
-# **root_get**
-> bool, date, datetime, dict, float, int, list, str, none_type root_get()
+# **root**
+> bool, date, datetime, dict, float, int, list, str, none_type root()
 
 Root
 
@@ -37,10 +37,10 @@ with rrap_mds_is_data_api.ApiClient() as api_client:
     # example, this endpoint has no required or optional parameters
     try:
         # Root
-        api_response = api_instance.root_get()
+        api_response = api_instance.root()
         pprint(api_response)
     except rrap_mds_is_data_api.ApiException as e:
-        print("Exception when calling DefaultApi->root_get: %s\n" % e)
+        print("Exception when calling DefaultApi->root: %s\n" % e)
 ```
 
 

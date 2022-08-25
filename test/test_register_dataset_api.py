@@ -23,17 +23,17 @@ class TestRegisterDatasetApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_get_dataset_schema_register_update_metadata_post(self):
-        """Test case for get_dataset_schema_register_update_metadata_post
+    def test_mint_dataset(self):
+        """Test case for mint_dataset
 
-        Get Dataset Schema  # noqa: E501
+        Mint Dataset  # noqa: E501
         """
         pass
 
-    def test_mint_dataset_register_mint_dataset_post(self):
-        """Test case for mint_dataset_register_mint_dataset_post
+    def test_update_metadata(self):
+        """Test case for update_metadata
 
-        Mint Dataset  # noqa: E501
+        Get Dataset Schema  # noqa: E501
         """
         pass
 

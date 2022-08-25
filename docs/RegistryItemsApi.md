@@ -4,12 +4,12 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**fetch_dataset_registry_items_fetch_dataset_get**](RegistryItemsApi.md#fetch_dataset_registry_items_fetch_dataset_get) | **GET** /registry/items/fetch-dataset | Fetch Dataset
-[**list_all_datasets_registry_items_list_all_datasets_get**](RegistryItemsApi.md#list_all_datasets_registry_items_list_all_datasets_get) | **GET** /registry/items/list-all-datasets | List All Datasets
+[**fetch_dataset**](RegistryItemsApi.md#fetch_dataset) | **GET** /registry/items/fetch-dataset | Fetch Dataset
+[**list_all_datasets**](RegistryItemsApi.md#list_all_datasets) | **GET** /registry/items/list-all-datasets | List All Datasets
 
 
-# **fetch_dataset_registry_items_fetch_dataset_get**
-> RegistryFetchResponse fetch_dataset_registry_items_fetch_dataset_get(handle_id)
+# **fetch_dataset**
+> RegistryFetchResponse fetch_dataset(handle_id)
 
 Fetch Dataset
 
@@ -52,10 +52,10 @@ with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     try:
         # Fetch Dataset
-        api_response = api_instance.fetch_dataset_registry_items_fetch_dataset_get(handle_id)
+        api_response = api_instance.fetch_dataset(handle_id)
         pprint(api_response)
     except rrap_mds_is_data_api.ApiException as e:
-        print("Exception when calling RegistryItemsApi->fetch_dataset_registry_items_fetch_dataset_get: %s\n" % e)
+        print("Exception when calling RegistryItemsApi->fetch_dataset: %s\n" % e)
 ```
 
 
@@ -88,8 +88,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **list_all_datasets_registry_items_list_all_datasets_get**
-> ListRegistryResponse list_all_datasets_registry_items_list_all_datasets_get()
+# **list_all_datasets**
+> ListRegistryResponse list_all_datasets()
 
 List All Datasets
 
@@ -130,10 +130,10 @@ with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
     # example, this endpoint has no required or optional parameters
     try:
         # List All Datasets
-        api_response = api_instance.list_all_datasets_registry_items_list_all_datasets_get()
+        api_response = api_instance.list_all_datasets()
         pprint(api_response)
     except rrap_mds_is_data_api.ApiException as e:
-        print("Exception when calling RegistryItemsApi->list_all_datasets_registry_items_list_all_datasets_get: %s\n" % e)
+        print("Exception when calling RegistryItemsApi->list_all_datasets: %s\n" % e)
 ```
 
 

@@ -23,15 +23,15 @@ class TestRegistryItemsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_fetch_dataset_registry_items_fetch_dataset_get(self):
-        """Test case for fetch_dataset_registry_items_fetch_dataset_get
+    def test_fetch_dataset(self):
+        """Test case for fetch_dataset
 
         Fetch Dataset  # noqa: E501
         """
         pass
 
-    def test_list_all_datasets_registry_items_list_all_datasets_get(self):
-        """Test case for list_all_datasets_registry_items_list_all_datasets_get
+    def test_list_all_datasets(self):
+        """Test case for list_all_datasets
 
         List All Datasets  # noqa: E501
         """

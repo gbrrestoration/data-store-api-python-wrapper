@@ -4,12 +4,12 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**generate_read_access_credentials_registry_credentials_generate_read_access_credentials_post**](RegistryCredentialsApi.md#generate_read_access_credentials_registry_credentials_generate_read_access_credentials_post) | **POST** /registry/credentials/generate-read-access-credentials | Generate Read Access Credentials
-[**generate_write_access_credentials_registry_credentials_generate_write_access_credentials_post**](RegistryCredentialsApi.md#generate_write_access_credentials_registry_credentials_generate_write_access_credentials_post) | **POST** /registry/credentials/generate-write-access-credentials | Generate Write Access Credentials
+[**generate_read_access_credentials**](RegistryCredentialsApi.md#generate_read_access_credentials) | **POST** /registry/credentials/generate-read-access-credentials | Generate Read Access Credentials
+[**generate_write_access_credentials**](RegistryCredentialsApi.md#generate_write_access_credentials) | **POST** /registry/credentials/generate-write-access-credentials | Generate Write Access Credentials
 
 
-# **generate_read_access_credentials_registry_credentials_generate_read_access_credentials_post**
-> CredentialResponse generate_read_access_credentials_registry_credentials_generate_read_access_credentials_post(credentials_request)
+# **generate_read_access_credentials**
+> CredentialResponse generate_read_access_credentials(credentials_request)
 
 Generate Read Access Credentials
 
@@ -60,10 +60,10 @@ with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     try:
         # Generate Read Access Credentials
-        api_response = api_instance.generate_read_access_credentials_registry_credentials_generate_read_access_credentials_post(credentials_request)
+        api_response = api_instance.generate_read_access_credentials(credentials_request)
         pprint(api_response)
     except rrap_mds_is_data_api.ApiException as e:
-        print("Exception when calling RegistryCredentialsApi->generate_read_access_credentials_registry_credentials_generate_read_access_credentials_post: %s\n" % e)
+        print("Exception when calling RegistryCredentialsApi->generate_read_access_credentials: %s\n" % e)
 ```
 
 
@@ -96,8 +96,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **generate_write_access_credentials_registry_credentials_generate_write_access_credentials_post**
-> CredentialResponse generate_write_access_credentials_registry_credentials_generate_write_access_credentials_post(credentials_request)
+# **generate_write_access_credentials**
+> CredentialResponse generate_write_access_credentials(credentials_request)
 
 Generate Write Access Credentials
 
@@ -148,10 +148,10 @@ with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     try:
         # Generate Write Access Credentials
-        api_response = api_instance.generate_write_access_credentials_registry_credentials_generate_write_access_credentials_post(credentials_request)
+        api_response = api_instance.generate_write_access_credentials(credentials_request)
         pprint(api_response)
     except rrap_mds_is_data_api.ApiException as e:
-        print("Exception when calling RegistryCredentialsApi->generate_write_access_credentials_registry_credentials_generate_write_access_credentials_post: %s\n" % e)
+        print("Exception when calling RegistryCredentialsApi->generate_write_access_credentials: %s\n" % e)
 ```
 
 

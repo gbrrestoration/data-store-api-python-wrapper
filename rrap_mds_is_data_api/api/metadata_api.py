@@ -38,14 +38,14 @@ class MetadataApi(object):
         if api_client is None:
             api_client = ApiClient()
         self.api_client = api_client
-        self.get_dataset_schema_metadata_dataset_schema_get_endpoint = _Endpoint(
+        self.get_dataset_schema_endpoint = _Endpoint(
             settings={
                 'response_type': (Schema,),
                 'auth': [
                     'OAuth2PasswordBearer'
                 ],
                 'endpoint_path': '/metadata/dataset-schema',
-                'operation_id': 'get_dataset_schema_metadata_dataset_schema_get',
+                'operation_id': 'get_dataset_schema',
                 'http_method': 'GET',
                 'servers': None,
             },
@@ -82,14 +82,14 @@ class MetadataApi(object):
             },
             api_client=api_client
         )
-        self.validate_metadata_metadata_validate_metadata_post_endpoint = _Endpoint(
+        self.validate_metadata_endpoint = _Endpoint(
             settings={
                 'response_type': (Status,),
                 'auth': [
                     'OAuth2PasswordBearer'
                 ],
                 'endpoint_path': '/metadata/validate-metadata',
-                'operation_id': 'validate_metadata_metadata_validate_metadata_post',
+                'operation_id': 'validate_metadata',
                 'http_method': 'POST',
                 'servers': None,
             },
@@ -135,7 +135,7 @@ class MetadataApi(object):
             api_client=api_client
         )
 
-    def get_dataset_schema_metadata_dataset_schema_get(
+    def get_dataset_schema(
         self,
         **kwargs
     ):
@@ -145,7 +145,7 @@ class MetadataApi(object):
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.get_dataset_schema_metadata_dataset_schema_get(async_req=True)
+        >>> thread = api.get_dataset_schema(async_req=True)
         >>> result = thread.get()
 
 
@@ -211,9 +211,9 @@ class MetadataApi(object):
             '_content_type')
         kwargs['_host_index'] = kwargs.get('_host_index')
         kwargs['_request_auths'] = kwargs.get('_request_auths', None)
-        return self.get_dataset_schema_metadata_dataset_schema_get_endpoint.call_with_http_info(**kwargs)
+        return self.get_dataset_schema_endpoint.call_with_http_info(**kwargs)
 
-    def validate_metadata_metadata_validate_metadata_post(
+    def validate_metadata(
         self,
         collection_format,
         **kwargs
@@ -224,7 +224,7 @@ class MetadataApi(object):
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.validate_metadata_metadata_validate_metadata_post(collection_format, async_req=True)
+        >>> thread = api.validate_metadata(collection_format, async_req=True)
         >>> result = thread.get()
 
         Args:
@@ -294,5 +294,5 @@ class MetadataApi(object):
         kwargs['_request_auths'] = kwargs.get('_request_auths', None)
         kwargs['collection_format'] = \
             collection_format
-        return self.validate_metadata_metadata_validate_metadata_post_endpoint.call_with_http_info(**kwargs)
+        return self.validate_metadata_endpoint.call_with_http_info(**kwargs)
 

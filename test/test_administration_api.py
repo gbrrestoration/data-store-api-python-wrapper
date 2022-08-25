@@ -23,43 +23,43 @@ class TestAdministrationApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_convert_collection_format_rocrate_admin_registry_convert_collection_format_ro_crate_post(self):
-        """Test case for convert_collection_format_rocrate_admin_registry_convert_collection_format_ro_crate_post
+    def test_convert_from_collection_format_to_ro_crate(self):
+        """Test case for convert_from_collection_format_to_ro_crate
 
         Convert Collection Format Rocrate  # noqa: E501
         """
         pass
 
-    def test_convert_rocrate_collection_format_admin_registry_convert_rocrate_collection_format_post(self):
-        """Test case for convert_rocrate_collection_format_admin_registry_convert_rocrate_collection_format_post
+    def test_convert_from_ro_crate_to_collection_format(self):
+        """Test case for convert_from_ro_crate_to_collection_format
 
         Convert Rocrate Collection Format  # noqa: E501
         """
         pass
 
-    def test_export_registry_parsed_admin_registry_export_parsed_get(self):
-        """Test case for export_registry_parsed_admin_registry_export_parsed_get
+    def test_export_parsed(self):
+        """Test case for export_parsed
 
         Export Registry Parsed  # noqa: E501
         """
         pass
 
-    def test_export_registry_unparsed_admin_registry_export_unparsed_get(self):
-        """Test case for export_registry_unparsed_admin_registry_export_unparsed_get
+    def test_export_unparsed(self):
+        """Test case for export_unparsed
 
         Export Registry Unparsed  # noqa: E501
         """
         pass
 
-    def test_import_registry_parsed_admin_registry_import_parsed_post(self):
-        """Test case for import_registry_parsed_admin_registry_import_parsed_post
+    def test_import_parsed(self):
+        """Test case for import_parsed
 
         Import Registry Parsed  # noqa: E501
         """
         pass
 
-    def test_import_registry_unparsed_admin_registry_import_unparsed_post(self):
-        """Test case for import_registry_unparsed_admin_registry_import_unparsed_post
+    def test_import_unparsed(self):
+        """Test case for import_unparsed
 
         Import Registry Unparsed  # noqa: E501
         """

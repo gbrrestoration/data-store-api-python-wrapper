@@ -4,16 +4,16 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**convert_collection_format_rocrate_admin_registry_convert_collection_format_ro_crate_post**](AdministrationApi.md#convert_collection_format_rocrate_admin_registry_convert_collection_format_ro_crate_post) | **POST** /admin/registry/convert/collection-format/ro-crate | Convert Collection Format Rocrate
-[**convert_rocrate_collection_format_admin_registry_convert_rocrate_collection_format_post**](AdministrationApi.md#convert_rocrate_collection_format_admin_registry_convert_rocrate_collection_format_post) | **POST** /admin/registry/convert/rocrate/collection-format | Convert Rocrate Collection Format
-[**export_registry_parsed_admin_registry_export_parsed_get**](AdministrationApi.md#export_registry_parsed_admin_registry_export_parsed_get) | **GET** /admin/registry/export/parsed | Export Registry Parsed
-[**export_registry_unparsed_admin_registry_export_unparsed_get**](AdministrationApi.md#export_registry_unparsed_admin_registry_export_unparsed_get) | **GET** /admin/registry/export/unparsed | Export Registry Unparsed
-[**import_registry_parsed_admin_registry_import_parsed_post**](AdministrationApi.md#import_registry_parsed_admin_registry_import_parsed_post) | **POST** /admin/registry/import/parsed | Import Registry Parsed
-[**import_registry_unparsed_admin_registry_import_unparsed_post**](AdministrationApi.md#import_registry_unparsed_admin_registry_import_unparsed_post) | **POST** /admin/registry/import/unparsed | Import Registry Unparsed
+[**convert_from_collection_format_to_ro_crate**](AdministrationApi.md#convert_from_collection_format_to_ro_crate) | **POST** /admin/registry/convert/collection-format/ro-crate | Convert Collection Format Rocrate
+[**convert_from_ro_crate_to_collection_format**](AdministrationApi.md#convert_from_ro_crate_to_collection_format) | **POST** /admin/registry/convert/rocrate/collection-format | Convert Rocrate Collection Format
+[**export_parsed**](AdministrationApi.md#export_parsed) | **GET** /admin/registry/export/parsed | Export Registry Parsed
+[**export_unparsed**](AdministrationApi.md#export_unparsed) | **GET** /admin/registry/export/unparsed | Export Registry Unparsed
+[**import_parsed**](AdministrationApi.md#import_parsed) | **POST** /admin/registry/import/parsed | Import Registry Parsed
+[**import_unparsed**](AdministrationApi.md#import_unparsed) | **POST** /admin/registry/import/unparsed | Import Registry Unparsed
 
 
-# **convert_collection_format_rocrate_admin_registry_convert_collection_format_ro_crate_post**
-> ResponseConvertCollectionFormatRocrate convert_collection_format_rocrate_admin_registry_convert_collection_format_ro_crate_post(input_convert_collection_format_rocrate)
+# **convert_from_collection_format_to_ro_crate**
+> ResponseConvertCollectionFormatRocrate convert_from_collection_format_to_ro_crate(input_convert_collection_format_rocrate)
 
 Convert Collection Format Rocrate
 
@@ -96,10 +96,10 @@ with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     try:
         # Convert Collection Format Rocrate
-        api_response = api_instance.convert_collection_format_rocrate_admin_registry_convert_collection_format_ro_crate_post(input_convert_collection_format_rocrate)
+        api_response = api_instance.convert_from_collection_format_to_ro_crate(input_convert_collection_format_rocrate)
         pprint(api_response)
     except rrap_mds_is_data_api.ApiException as e:
-        print("Exception when calling AdministrationApi->convert_collection_format_rocrate_admin_registry_convert_collection_format_ro_crate_post: %s\n" % e)
+        print("Exception when calling AdministrationApi->convert_from_collection_format_to_ro_crate: %s\n" % e)
 ```
 
 
@@ -132,8 +132,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **convert_rocrate_collection_format_admin_registry_convert_rocrate_collection_format_post**
-> ResponseConvertRocrateCollectionFormat convert_rocrate_collection_format_admin_registry_convert_rocrate_collection_format_post(input_convert_rocrate_collection_format)
+# **convert_from_ro_crate_to_collection_format**
+> ResponseConvertRocrateCollectionFormat convert_from_ro_crate_to_collection_format(input_convert_rocrate_collection_format)
 
 Convert Rocrate Collection Format
 
@@ -181,10 +181,10 @@ with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     try:
         # Convert Rocrate Collection Format
-        api_response = api_instance.convert_rocrate_collection_format_admin_registry_convert_rocrate_collection_format_post(input_convert_rocrate_collection_format)
+        api_response = api_instance.convert_from_ro_crate_to_collection_format(input_convert_rocrate_collection_format)
         pprint(api_response)
     except rrap_mds_is_data_api.ApiException as e:
-        print("Exception when calling AdministrationApi->convert_rocrate_collection_format_admin_registry_convert_rocrate_collection_format_post: %s\n" % e)
+        print("Exception when calling AdministrationApi->convert_from_ro_crate_to_collection_format: %s\n" % e)
 ```
 
 
@@ -217,8 +217,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **export_registry_parsed_admin_registry_export_parsed_get**
-> RegistryParsedExport export_registry_parsed_admin_registry_export_parsed_get()
+# **export_parsed**
+> RegistryParsedExport export_parsed()
 
 Export Registry Parsed
 
@@ -259,10 +259,10 @@ with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
     # example, this endpoint has no required or optional parameters
     try:
         # Export Registry Parsed
-        api_response = api_instance.export_registry_parsed_admin_registry_export_parsed_get()
+        api_response = api_instance.export_parsed()
         pprint(api_response)
     except rrap_mds_is_data_api.ApiException as e:
-        print("Exception when calling AdministrationApi->export_registry_parsed_admin_registry_export_parsed_get: %s\n" % e)
+        print("Exception when calling AdministrationApi->export_parsed: %s\n" % e)
 ```
 
 
@@ -291,8 +291,8 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **export_registry_unparsed_admin_registry_export_unparsed_get**
-> RegistryUnparsedExport export_registry_unparsed_admin_registry_export_unparsed_get()
+# **export_unparsed**
+> RegistryUnparsedExport export_unparsed()
 
 Export Registry Unparsed
 
@@ -333,10 +333,10 @@ with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
     # example, this endpoint has no required or optional parameters
     try:
         # Export Registry Unparsed
-        api_response = api_instance.export_registry_unparsed_admin_registry_export_unparsed_get()
+        api_response = api_instance.export_unparsed()
         pprint(api_response)
     except rrap_mds_is_data_api.ApiException as e:
-        print("Exception when calling AdministrationApi->export_registry_unparsed_admin_registry_export_unparsed_get: %s\n" % e)
+        print("Exception when calling AdministrationApi->export_unparsed: %s\n" % e)
 ```
 
 
@@ -365,8 +365,8 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **import_registry_parsed_admin_registry_import_parsed_post**
-> ImportResponse import_registry_parsed_admin_registry_import_parsed_post(registry_parsed_import)
+# **import_parsed**
+> ImportResponse import_parsed(registry_parsed_import)
 
 Import Registry Parsed
 
@@ -453,10 +453,10 @@ with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     try:
         # Import Registry Parsed
-        api_response = api_instance.import_registry_parsed_admin_registry_import_parsed_post(registry_parsed_import)
+        api_response = api_instance.import_parsed(registry_parsed_import)
         pprint(api_response)
     except rrap_mds_is_data_api.ApiException as e:
-        print("Exception when calling AdministrationApi->import_registry_parsed_admin_registry_import_parsed_post: %s\n" % e)
+        print("Exception when calling AdministrationApi->import_parsed: %s\n" % e)
 ```
 
 
@@ -489,8 +489,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **import_registry_unparsed_admin_registry_import_unparsed_post**
-> ImportResponse import_registry_unparsed_admin_registry_import_unparsed_post(registry_unparsed_import)
+# **import_unparsed**
+> ImportResponse import_unparsed(registry_unparsed_import)
 
 Import Registry Unparsed
 
@@ -541,10 +541,10 @@ with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     try:
         # Import Registry Unparsed
-        api_response = api_instance.import_registry_unparsed_admin_registry_import_unparsed_post(registry_unparsed_import)
+        api_response = api_instance.import_unparsed(registry_unparsed_import)
         pprint(api_response)
     except rrap_mds_is_data_api.ApiException as e:
-        print("Exception when calling AdministrationApi->import_registry_unparsed_admin_registry_import_unparsed_post: %s\n" % e)
+        print("Exception when calling AdministrationApi->import_unparsed: %s\n" % e)
 ```
 
 

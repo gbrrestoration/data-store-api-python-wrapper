@@ -4,14 +4,14 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**check_admin_access_check_access_check_admin_access_get**](AccessCheckApi.md#check_admin_access_check_access_check_admin_access_get) | **GET** /check-access/check-admin-access | Check Admin Access
-[**check_general_access_check_access_check_general_access_get**](AccessCheckApi.md#check_general_access_check_access_check_general_access_get) | **GET** /check-access/check-general-access | Check General Access
-[**check_read_access_check_access_check_read_access_get**](AccessCheckApi.md#check_read_access_check_access_check_read_access_get) | **GET** /check-access/check-read-access | Check Read Access
-[**check_write_access_check_access_check_write_access_get**](AccessCheckApi.md#check_write_access_check_access_check_write_access_get) | **GET** /check-access/check-write-access | Check Write Access
+[**check_admin_access**](AccessCheckApi.md#check_admin_access) | **GET** /check-access/check-admin-access | Check Admin Access
+[**check_general_access**](AccessCheckApi.md#check_general_access) | **GET** /check-access/check-general-access | Check General Access
+[**check_read_access**](AccessCheckApi.md#check_read_access) | **GET** /check-access/check-read-access | Check Read Access
+[**check_write_access**](AccessCheckApi.md#check_write_access) | **GET** /check-access/check-write-access | Check Write Access
 
 
-# **check_admin_access_check_access_check_admin_access_get**
-> User check_admin_access_check_access_check_admin_access_get()
+# **check_admin_access**
+> User check_admin_access()
 
 Check Admin Access
 
@@ -52,10 +52,10 @@ with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
     # example, this endpoint has no required or optional parameters
     try:
         # Check Admin Access
-        api_response = api_instance.check_admin_access_check_access_check_admin_access_get()
+        api_response = api_instance.check_admin_access()
         pprint(api_response)
     except rrap_mds_is_data_api.ApiException as e:
-        print("Exception when calling AccessCheckApi->check_admin_access_check_access_check_admin_access_get: %s\n" % e)
+        print("Exception when calling AccessCheckApi->check_admin_access: %s\n" % e)
 ```
 
 
@@ -84,8 +84,8 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **check_general_access_check_access_check_general_access_get**
-> User check_general_access_check_access_check_general_access_get()
+# **check_general_access**
+> User check_general_access()
 
 Check General Access
 
@@ -126,10 +126,10 @@ with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
     # example, this endpoint has no required or optional parameters
     try:
         # Check General Access
-        api_response = api_instance.check_general_access_check_access_check_general_access_get()
+        api_response = api_instance.check_general_access()
         pprint(api_response)
     except rrap_mds_is_data_api.ApiException as e:
-        print("Exception when calling AccessCheckApi->check_general_access_check_access_check_general_access_get: %s\n" % e)
+        print("Exception when calling AccessCheckApi->check_general_access: %s\n" % e)
 ```
 
 
@@ -158,8 +158,8 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **check_read_access_check_access_check_read_access_get**
-> User check_read_access_check_access_check_read_access_get()
+# **check_read_access**
+> User check_read_access()
 
 Check Read Access
 
@@ -200,10 +200,10 @@ with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
     # example, this endpoint has no required or optional parameters
     try:
         # Check Read Access
-        api_response = api_instance.check_read_access_check_access_check_read_access_get()
+        api_response = api_instance.check_read_access()
         pprint(api_response)
     except rrap_mds_is_data_api.ApiException as e:
-        print("Exception when calling AccessCheckApi->check_read_access_check_access_check_read_access_get: %s\n" % e)
+        print("Exception when calling AccessCheckApi->check_read_access: %s\n" % e)
 ```
 
 
@@ -232,8 +232,8 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **check_write_access_check_access_check_write_access_get**
-> User check_write_access_check_access_check_write_access_get()
+# **check_write_access**
+> User check_write_access()
 
 Check Write Access
 
@@ -274,10 +274,10 @@ with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
     # example, this endpoint has no required or optional parameters
     try:
         # Check Write Access
-        api_response = api_instance.check_write_access_check_access_check_write_access_get()
+        api_response = api_instance.check_write_access()
         pprint(api_response)
     except rrap_mds_is_data_api.ApiException as e:
-        print("Exception when calling AccessCheckApi->check_write_access_check_access_check_write_access_get: %s\n" % e)
+        print("Exception when calling AccessCheckApi->check_write_access: %s\n" % e)
 ```
 
 

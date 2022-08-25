@@ -37,14 +37,14 @@ class RegistryCredentialsApi(object):
         if api_client is None:
             api_client = ApiClient()
         self.api_client = api_client
-        self.generate_read_access_credentials_registry_credentials_generate_read_access_credentials_post_endpoint = _Endpoint(
+        self.generate_read_access_credentials_endpoint = _Endpoint(
             settings={
                 'response_type': (CredentialResponse,),
                 'auth': [
                     'OAuth2PasswordBearer'
                 ],
                 'endpoint_path': '/registry/credentials/generate-read-access-credentials',
-                'operation_id': 'generate_read_access_credentials_registry_credentials_generate_read_access_credentials_post',
+                'operation_id': 'generate_read_access_credentials',
                 'http_method': 'POST',
                 'servers': None,
             },
@@ -89,14 +89,14 @@ class RegistryCredentialsApi(object):
             },
             api_client=api_client
         )
-        self.generate_write_access_credentials_registry_credentials_generate_write_access_credentials_post_endpoint = _Endpoint(
+        self.generate_write_access_credentials_endpoint = _Endpoint(
             settings={
                 'response_type': (CredentialResponse,),
                 'auth': [
                     'OAuth2PasswordBearer'
                 ],
                 'endpoint_path': '/registry/credentials/generate-write-access-credentials',
-                'operation_id': 'generate_write_access_credentials_registry_credentials_generate_write_access_credentials_post',
+                'operation_id': 'generate_write_access_credentials',
                 'http_method': 'POST',
                 'servers': None,
             },
@@ -142,7 +142,7 @@ class RegistryCredentialsApi(object):
             api_client=api_client
         )
 
-    def generate_read_access_credentials_registry_credentials_generate_read_access_credentials_post(
+    def generate_read_access_credentials(
         self,
         credentials_request,
         **kwargs
@@ -153,7 +153,7 @@ class RegistryCredentialsApi(object):
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.generate_read_access_credentials_registry_credentials_generate_read_access_credentials_post(credentials_request, async_req=True)
+        >>> thread = api.generate_read_access_credentials(credentials_request, async_req=True)
         >>> result = thread.get()
 
         Args:
@@ -223,9 +223,9 @@ class RegistryCredentialsApi(object):
         kwargs['_request_auths'] = kwargs.get('_request_auths', None)
         kwargs['credentials_request'] = \
             credentials_request
-        return self.generate_read_access_credentials_registry_credentials_generate_read_access_credentials_post_endpoint.call_with_http_info(**kwargs)
+        return self.generate_read_access_credentials_endpoint.call_with_http_info(**kwargs)
 
-    def generate_write_access_credentials_registry_credentials_generate_write_access_credentials_post(
+    def generate_write_access_credentials(
         self,
         credentials_request,
         **kwargs
@@ -236,7 +236,7 @@ class RegistryCredentialsApi(object):
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
 
-        >>> thread = api.generate_write_access_credentials_registry_credentials_generate_write_access_credentials_post(credentials_request, async_req=True)
+        >>> thread = api.generate_write_access_credentials(credentials_request, async_req=True)
         >>> result = thread.get()
 
         Args:
@@ -306,5 +306,5 @@ class RegistryCredentialsApi(object):
         kwargs['_request_auths'] = kwargs.get('_request_auths', None)
         kwargs['credentials_request'] = \
             credentials_request
-        return self.generate_write_access_credentials_registry_credentials_generate_write_access_credentials_post_endpoint.call_with_http_info(**kwargs)
+        return self.generate_write_access_credentials_endpoint.call_with_http_info(**kwargs)
 

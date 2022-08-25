@@ -23,15 +23,15 @@ class TestMetadataApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_get_dataset_schema_metadata_dataset_schema_get(self):
-        """Test case for get_dataset_schema_metadata_dataset_schema_get
+    def test_get_dataset_schema(self):
+        """Test case for get_dataset_schema
 
         Get Dataset Schema  # noqa: E501
         """
         pass
 
-    def test_validate_metadata_metadata_validate_metadata_post(self):
-        """Test case for validate_metadata_metadata_validate_metadata_post
+    def test_validate_metadata(self):
+        """Test case for validate_metadata
 
         Validate Metadata  # noqa: E501
         """

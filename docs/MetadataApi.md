@@ -4,12 +4,12 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_dataset_schema_metadata_dataset_schema_get**](MetadataApi.md#get_dataset_schema_metadata_dataset_schema_get) | **GET** /metadata/dataset-schema | Get Dataset Schema
-[**validate_metadata_metadata_validate_metadata_post**](MetadataApi.md#validate_metadata_metadata_validate_metadata_post) | **POST** /metadata/validate-metadata | Validate Metadata
+[**get_dataset_schema**](MetadataApi.md#get_dataset_schema) | **GET** /metadata/dataset-schema | Get Dataset Schema
+[**validate_metadata**](MetadataApi.md#validate_metadata) | **POST** /metadata/validate-metadata | Validate Metadata
 
 
-# **get_dataset_schema_metadata_dataset_schema_get**
-> Schema get_dataset_schema_metadata_dataset_schema_get()
+# **get_dataset_schema**
+> Schema get_dataset_schema()
 
 Get Dataset Schema
 
@@ -50,10 +50,10 @@ with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
     # example, this endpoint has no required or optional parameters
     try:
         # Get Dataset Schema
-        api_response = api_instance.get_dataset_schema_metadata_dataset_schema_get()
+        api_response = api_instance.get_dataset_schema()
         pprint(api_response)
     except rrap_mds_is_data_api.ApiException as e:
-        print("Exception when calling MetadataApi->get_dataset_schema_metadata_dataset_schema_get: %s\n" % e)
+        print("Exception when calling MetadataApi->get_dataset_schema: %s\n" % e)
 ```
 
 
@@ -82,8 +82,8 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **validate_metadata_metadata_validate_metadata_post**
-> Status validate_metadata_metadata_validate_metadata_post(collection_format)
+# **validate_metadata**
+> Status validate_metadata(collection_format)
 
 Validate Metadata
 
@@ -152,10 +152,10 @@ with rrap_mds_is_data_api.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     try:
         # Validate Metadata
-        api_response = api_instance.validate_metadata_metadata_validate_metadata_post(collection_format)
+        api_response = api_instance.validate_metadata(collection_format)
         pprint(api_response)
     except rrap_mds_is_data_api.ApiException as e:
-        print("Exception when calling MetadataApi->validate_metadata_metadata_validate_metadata_post: %s\n" % e)
+        print("Exception when calling MetadataApi->validate_metadata: %s\n" % e)
 ```
 
 
